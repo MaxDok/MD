@@ -294,22 +294,22 @@ a{
     flex-basis: 100%;
 }
 .item-1{
-    background-image: url(../img/examples/example-1.jpg);
+    background-image: url(../img/examples/example-1.jpeg);
     background-size: cover;
 }
 .item-2{
-    background-image: url(../img/examples/example-2.jpg);
+    background-image: url(../img/examples/example-2.jpeg);
     background-size: cover;
 }
 .item-3{
-    background-image: url(../img/examples/example-3.jpg);
+    background-image: url(../img/examples/example-3.jpeg);
     background-size: cover;
 }
 .item-4{
-    background-image: url(../img/examples/example-4.jpg);
+    background-image: url(../img/examples/example-4.jpeg);
 }
 .item-5{
-    background-image: url(../img/examples/example-5.jpg);
+    background-image: url(../img/examples/example-5.jpeg);
     background-size: cover;
 }
 .company__row{
