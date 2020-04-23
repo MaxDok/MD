@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <title>MD</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header" id="header">
@@ -165,11 +166,11 @@
         <div class="container">
             <h2 class="title input__title">Хотите веб-сайт?</h2>
             <span class="subtitle input__subtitle">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</span>
-            <form class="form__block">
-                <input type="text" required placeholder="Ваше имя" maxlength="15" class="input__form input-name">
-                <input type="email" required placeholder="Ваш e-mail" maxlength="40" class="input__form input-email">
+            <form action="mail.php" method="POST" class="form__block">
+                <input type="text" name="user_name" required placeholder="Ваше имя" maxlength="15" class="input__form input-name">
+                <input type="email" name="user_mail" required placeholder="Ваш e-mail" maxlength="40" class="input__form input-email">
                 <textarea required placeholder="Сообщение" class="input-text"></textarea>
-                <button class="button input__button">ОТПРАВИТЬ</button>
+                <button type="submit" name="text_comment" class="button input__button">ОТПРАВИТЬ</button>
             </form>
         </div>
         <!-- /.container -->
@@ -199,11 +200,11 @@
             <h3 class="modal__title">
                 Оставьте заявку
             </h3>
-            <form class="form__modal">
-                <input type="text" required placeholder="Ваше имя" maxlength="15" class="modal__input modal__input-name">
-                <input type="email" required placeholder="Ваш e-mail" maxlength="40" class="modal__input modal__input-email">
-                <textarea required placeholder="Сообщение" class="modal__text"></textarea>
-                <button class="button modal__button">ОТПРАВИТЬ</button>
+            <form action="mail.php" method="POST" class="form__modal">
+                <input type="text" name="user_name" required placeholder="Ваше имя" maxlength="15" class="modal__input modal__input-name">
+                <input type="email" name="user_mail" required placeholder="Ваш e-mail" maxlength="40" class="modal__input modal__input-email">
+                <textarea required name="text_comment" placeholder="Сообщение" class="modal__text"></textarea>
+                <button type="submit" class="button modal__button">ОТПРАВИТЬ</button>
             </form>
         </div>
     </div>
