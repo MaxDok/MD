@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
     let header = $("#header__menu");
     let intro = $("#header__col");
     let introH = intro.innerHeight();
@@ -36,16 +36,15 @@ $(function(){
         nav.toggleClass("show");
     });
 
-    // $(".burger__item").click(function(event){
-    //     $(".burger__item").toggleClass("active");
-    // });
+    var button = $("#header__button");
+    var modal = $("#modal");
+    var close = $("#close");
 
-    // let burger = $(".burger__item")
+    button.on('click', function(){
+        modal.addClass('modal_active');
+    });
 
-    // $(".burger__item").on("click", function(event){
-    //     event.preventDefault();
-
-    //     burger.toggleClass("active");
-    // });
-
+    close.on('click', function(){
+        modal.removeClass('modal_active');
+    });
 });
